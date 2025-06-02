@@ -262,7 +262,7 @@ int main() {
     printf("REMINDER_SYS: Починаю процедуру завершення...\n");
     for (size_t i = 0; i < reminders_count; i++) {
         if (reminders_list[i].is_active) { // Видаляємо тільки активні таймери
-            printf("    Видаляю таймер для нагадування ID %d...\n", reminders_list[i].reminder_uid);
+            printf("Видаляю таймер для нагадування ID %d...\n", reminders_list[i].reminder_uid);
             timer_delete(reminders_list[i].timer_id);
         }
     }
